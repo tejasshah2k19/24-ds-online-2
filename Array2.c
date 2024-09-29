@@ -24,6 +24,14 @@ void insertElement()
 
 void removeElement()
 {
+    int location, i;
+    printf("\nEnter the location");
+    scanf("%d", &location);
+
+    for (i = location - 1; i > 0; i--)
+    {
+        arr[i] = arr[i - 1];
+    }
 }
 
 void display()
@@ -35,6 +43,35 @@ void display()
         printf(" %d", arr[i]);
     }
 }
+// time complexity => O(n)
+void linearSearch() /// sequential search
+{
+    int key, i;
+    int found = 0; // not found
+    printf("\nEnter number");
+    scanf("%d", &key); // 24 200 10
+    // 10 20 30 40 50 60
+    // 1  2  3  4  5  6
+    // 100
+    // 6
+    // 10 20 30 40 50 60 70 80 90 100
+    // 200
+    // 10
+    // n
+    for (i = 0; i < SIZE; i++)
+    {
+        if (arr[i] == key)
+        {
+            printf("\nFound");
+            found = 1;
+            break;
+        }
+    }
+    if (found == 0)
+    {
+        printf("\n%d Not Found", key);
+    }
+}
 
 int main()
 {
@@ -43,7 +80,7 @@ int main()
 
     while (-1)
     {
-        printf("\n1 For Add Element\n2 For Remove Element\n3 For Display\n4 For Exit\n");
+        printf("\n1 For Add Element\n2 For Remove Element\n3 For Display\n4 For Exit\n5 For Search\n");
         printf("Enter choice : ");
         scanf("%d", &choice);
 
@@ -60,6 +97,9 @@ int main()
             break;
         case 4:
             exit(0);
+        case 5:
+            linearSearch();
+            break;
         default:
             printf("\nInvalid Choice");
             break;
