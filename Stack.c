@@ -10,22 +10,48 @@ void push()
 {
     int num;
 
-    printf("\nEnter number");
-    scanf("%d",&num);
+    if (top == SIZE - 1)
+    {
+        printf("\nStack is Full");
+    }
+    else
+    {
+        printf("\nEnter number");
+        scanf("%d", &num);
 
-    top++;
-    stack[top] = num; 
+        top++;
+        stack[top] = num;
+    }
 }
 
 void pop()
 {
+    if (top == -1)
+    {
+        printf("\nStack Empty");
+    }
+    else
+    {
+        printf("\n%d", stack[top]);
+        top--;
+    }
 }
+
+void peek(){
+    if(top == -1){
+        printf("\nStack Empty");
+    }else{
+        printf("\n%d",stack[top]); 
+    }
+}
+
 
 void display()
 {
     int i;
-    for(i=top;i>=0;i--){
-        printf("\n%d",stack[i]);
+    for (i = top; i >= 0; i--)
+    {
+        printf("\n%d", stack[i]);
     }
 }
 
@@ -33,7 +59,7 @@ int main()
 {
     int choice;
 
-    while (11)//but not 0 -> false 
+    while (11) // but not 0 -> false
     {
         printf("\n0 For Exit\n1 For Push\n2 For Pop\n3 For Display\nEnter choice : ");
         scanf("%d", &choice);

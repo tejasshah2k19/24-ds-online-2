@@ -159,3 +159,26 @@ DS -> Linear -> Stack -> LiFo -> Last In First Out
 6)recently used app	
 
 -------------------------------------------------------
+
+
+________________ function is used to insert data in stack ? 
+PUSH()
+
+________________ function is used to remove data in stack ? 
+POP()
+
+
+_________________ pointer we used to manage stack  ?
+top 
+
+Stack follows _____LIFO_______ mechanism ?
+
+
+which condition is used to check stack is full ?
+top == SIZE-1 
+
+
+How to check stack is empty?
+top == -1  
+
+------------------------------------------------------------
