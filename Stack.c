@@ -45,6 +45,13 @@ void peek(){
     }
 }
 
+void peep(){
+    int location,index; 
+    printf("\nEnter the location");
+    scanf("%d",&location);
+    index = top - location + 1 ; //logic -> formula 
+    printf("\n%d",stack[index]);
+}
 
 void display()
 {
