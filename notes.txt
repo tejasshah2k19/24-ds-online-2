@@ -182,3 +182,58 @@ How to check stack is empty?
 top == -1  
 
 ------------------------------------------------------------
+
+
+M 
+F 
+
+character -> data type -> 
+
+char x; //single character 
+    //royal -> we can not store 
+
+char x[10]; //character array -> string  
+    //royal -> we can store 
+
+multiple characters -> character array -> string
+
+    char x[30];//2 
+    //royaleducation ?
+    //royal ->
+
+    //5 : 25 
+
+    //royal 
+
+
+
+    %c -> single character
+    %s -> characters : string 
+    
+
+    -------------------------------------------------------
+
+    5 num -> sum 
+    15 
+    25 
+
+    array -> collection of items - same type of data type 
+
+    structure ->  collection of items - diff type of data type 
+
+            movie -> 
+            name -> char[30] 
+            year -> int 
+            lang -> char[30]
+
+
+  struct tagName{
+
+  };
+
+  struct movie{
+        char name[30];
+        int year; 
+        char lang[30];
+  };
+
