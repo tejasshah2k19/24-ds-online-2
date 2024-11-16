@@ -237,3 +237,27 @@ multiple characters -> character array -> string
         char lang[30];
   };
 
+--------------------------------------------------------------------------
+Stack -> mechanism ? LiFo 
+            Last In First Out 
+
+            whatsapp messages 
+            call history 
+            gallery 
+
+    -> element / data -> add -> PUSH 
+    -> element / data -> remove -> POP 
+
+    top of the element ===>  PEEK
+
+    pointer-> TOP 
+
+---------------------------------------------------------------------------
+
+FiFo -> First In First Out 
+Queue -> 
+
+Line -> Queue -> 
+Ecommerce Buy -> 
+Printer print -> 
+
