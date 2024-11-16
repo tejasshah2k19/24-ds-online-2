@@ -8,12 +8,34 @@ int r = -1; // empty
 
 void insert(int num)
 {
+
+    if (r == SIZE - 1)
+    {
+        printf("\nQ is Full");
+    }
+    else
+    {
+        r++;
+        q[r] = num;
+        if (f == -1)
+        {
+            f = 0; // first time insertion
+        }
+    }
 }
 
 int removeElement()
 {
-
-    return 0;
+    int del = q[f];
+    if (f == -1)
+    {
+        return -1;
+    }
+    else
+    {
+        f++;
+        return del;
+    }
 }
 
 int main()
@@ -40,7 +62,15 @@ int main()
             insert(num);
             break;
         case 2:
-            removeElement();
+            num = removeElement();
+            if (num == -1)
+            {
+                printf("\nQ is empty");
+            }
+            else
+            {
+                printf("\n%d removed", num);
+            }
             break;
         default:
             break;
