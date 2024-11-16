@@ -33,8 +33,25 @@ int removeElement()
     }
     else
     {
-        f++;
+        if (f == r)
+        {
+            //last element delete 
+            f = -1;
+            r = -1;
+        }
+        else
+        {   // element delete 
+            f++;
+        }
         return del;
+    }
+}
+
+void display(){
+    int i;
+    printf("\n======Elements in Queue=======\n");
+    for(i=f;i<=r;i++){
+        printf("  %d",q[i]);
     }
 }
 
@@ -47,7 +64,7 @@ int main()
     while (1)
     {
 
-        printf("\n0 For Exit\n1 For insert\n2 For Remove");
+        printf("\n0 For Exit\n1 For insert\n2 For Remove\n3 For Display");
         printf("\nEnter choice");
 
         scanf("%d", &choice);
@@ -71,6 +88,9 @@ int main()
             {
                 printf("\n%d removed", num);
             }
+            break;
+        case 3:
+            display();
             break;
         default:
             break;
