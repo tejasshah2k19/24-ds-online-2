@@ -281,3 +281,73 @@ str =>
 STACK 
     char -> 
 ----------------------------------------------------------------
+
+
+variable -> is used to store value 
+pointer variable -> is used to store memory address of another variable 
+
+
+int a = 10; // variable 
+
+int *p; //pointer variable 
+
+p = &a; 
+
+
+printf(" %d ",a); //10  
+printf(" %d ",p); //1200 
+
+printf(" %d ",&p); //  address of p =>1500 
+printf(" %d ",*p); //  value at p => 10
+
+
+----------------------------------------------------------------
+1:4 byte 
+1000: 4*1000 => 4000 byte 
+SMA-> static memory allocation -> implicit 
+int a;//4 byte implicit 
+int x[10]; // 4 : 6 
+           // 12 : -2
+//
+//
+//
+//
+
+// no need
+
+
+
+
+end of program 
+
+
+DMA -> dynamic memory allocation --> 
+
+allocation -> calloc() , malloc() 
+deAlloction : release -> free() 
+resize : realloc()
+
+stdlib.h
+
+---------------------------------------------------------------------
+
+calloc vs malloc 
+
+int a; ---> 4 : single block : malloc 
+
+int a[5]; --> 20  4:5 block => 20 block : calloc 
+
+----------------------------------------------------------------------
+
+struct student 
+   id //s
+   name //s 
+   maths//s 
+   sci//s 
+   eng//s 
+   perc//d 
+   grade//d  
+
+
+----------------------------------------------------------------------
+
