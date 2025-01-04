@@ -96,3 +96,13 @@ int main()
     free(s);
     return 0;
 }
+
+
+//new 
+
+//gc 
+
+//System.gc();
+
+
+//try() finalize()

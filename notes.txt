@@ -350,4 +350,58 @@ struct student
 
 
 ----------------------------------------------------------------------
+struct ? 
+
+struct student{
+
+    char name[20];
+    int maths;
+    int sci;
+};
+ 
+
+struct student s[50];
+
+malloc 
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+dynamic list -> 
+
+linked list -> 
+
+
+data -> node 
+
+
+linked list -> node 
+
+        node -> data | next 
+        data -> store information
+        next -> address of next node 
+
+
+1) single linked list 
+2) double linked list 
+3) circular linked list 
+
+
+
+single linked list -> 
+    self referential structure --> 
+    *pointer 
+    
+
+
+
+
+
+
 
