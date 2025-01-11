@@ -398,7 +398,12 @@ single linked list ->
     self referential structure --> 
     *pointer 
     
+--------------------------------
 
+dynamic list -> 
+        when you want you will allocate memory -> 
+
+        
 
 
 

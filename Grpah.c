@@ -10,6 +10,7 @@ struct edges
 {
     int src;
     int dest;
+    int cost;
 };
 
 int main()
@@ -19,23 +20,28 @@ int main()
     struct graph g;
     struct edges *e;
     int i;
-    int src, dest;
+    int src, dest,cost;
 
     printf("\nHow many vertex and edges you have?");
-    scanf("%d%d", &g.totalVertex, &g.totlaEdges);
+    scanf("%d%d", &g.totalVertex, &g.totlaEdges);//6,9 
     g.totlaEdges = g.totlaEdges * 2;
 
-    e = calloc(g.totlaEdges, sizeof(struct edges));
+    e = calloc(g.totlaEdges, sizeof(struct edges));//18
 
     for (i = 0; i < g.totlaEdges; i++)
     {
-        printf("\nEnter src and dest");
-        scanf("%d%d", &src, &dest);
+        printf("\nEnter src and dest and cost");
+        scanf("%d%d%d", &src, &dest,&cost);
         e[i].src = src;
         e[i].dest = dest;
+        e[i].cost = cost;
+
+        
         i++;
         e[i].src = dest;
         e[i].dest = src;
+        e[i].cost = cost;
+       
     }
 
     printf("\nEnter source :");
