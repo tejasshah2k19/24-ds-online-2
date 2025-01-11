@@ -63,10 +63,29 @@ void search(int num)
         p = p->next;
     }
 
-    if(found == 1){
-        printf("\n%d Found",num);
-    }else{
-        printf("\n%d not Found",num);
+    if (found == 1)
+    {
+        printf("\n%d Found", num);
+    }
+    else
+    {
+        printf("\n%d not Found", num);
+    }
+}
+
+void addNodeBeg(int num)
+{
+    struct node *tmp;
+    if (head == NULL)
+    {
+        addNode(num);
+    }
+    else
+    {
+        tmp = malloc(sizeof(struct node));
+        tmp->data = num;
+        tmp->next = head;
+        head = tmp;
     }
 }
 int main()
@@ -77,6 +96,10 @@ int main()
     addNode(30);
     addNode(40);
     addNode(50);
+
+    addNodeBeg(15);
+
+    addNodeBeg(25);
 
     display();
 
