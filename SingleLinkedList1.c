@@ -14,7 +14,7 @@ struct node
 
 void addNode(int num)
 {
-    struct node *tmp,*p;
+    struct node *tmp, *p;
     if (head == NULL)
     {
         head = malloc(sizeof(struct node));
@@ -25,14 +25,14 @@ void addNode(int num)
     {
         tmp = malloc(sizeof(struct node));
         tmp->data = num;
-        tmp->next = NULL; 
-        p =head; 
+        tmp->next = NULL;
+        p = head;
 
-        while(p->next != NULL){
-            p=p->next;
+        while (p->next != NULL)
+        {
+            p = p->next;
         }
-        p->next = tmp; 
-
+        p->next = tmp;
     }
 }
 
@@ -47,10 +47,30 @@ void display()
         p = p->next;
     }
 }
+
+void search(int num)
+{
+    struct node *p;
+    p = head;
+    int found = 0;
+    while (p != NULL)
+    {
+        if (p->data == num)
+        {
+            found = 1;
+            break;
+        }
+        p = p->next;
+    }
+
+    if(found == 1){
+        printf("\n%d Found",num);
+    }else{
+        printf("\n%d not Found",num);
+    }
+}
 int main()
 {
- 
-    
 
     addNode(10);
     addNode(20);
@@ -59,5 +79,7 @@ int main()
     addNode(50);
 
     display();
+
+    search(50);
     return 0;
 }
