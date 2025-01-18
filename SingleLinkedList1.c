@@ -202,6 +202,7 @@ int main()
         case 4:
             deleteNodeLast();
             break;
+<<<<<<< HEAD
         case 5:
             delBeg();break;
         case 6:
@@ -210,6 +211,8 @@ int main()
             delNodeAny(src);
             break;
         
+=======
+>>>>>>> a8e62faf57bf892419b2143a7c304e19bd4c4e38
         case 7:
             display();
             break;
