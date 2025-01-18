@@ -151,6 +151,10 @@ void delBeg(){
     free(p); 
 }
 
+void delNodeAny(int src){
+    //task 
+}
+
 int main()
 {
 
@@ -198,6 +202,14 @@ int main()
         case 4:
             deleteNodeLast();
             break;
+        case 5:
+            delBeg();break;
+        case 6:
+            printf("\nEnter number that you want to delete");
+            scanf("%d",&src);
+            delNodeAny(src);
+            break;
+        
         case 7:
             display();
             break;
