@@ -107,24 +107,48 @@ void sumOfAllNode()
 // countEvenNode
 // countOddNode
 
-void addNodeAny(int src,int num){
-    struct node *p = head; 
+void addNodeAny(int src, int num)
+{
+    struct node *p = head;
     struct node *tmp;
-    while(p!=NULL){
-        if(p->data == src){
+    while (p != NULL)
+    {
+        if (p->data == src)
+        {
             break;
         }
         p = p->next;
     }
 
-    if(p == NULL){
+    if (p == NULL)
+    {
         printf("\nInvalid Source");
-    }else{
+    }
+    else
+    {
         tmp = malloc(sizeof(struct node));
         tmp->data = num;
-        tmp->next =  p->next; 
-        p->next = tmp; 
+        tmp->next = p->next;
+        p->next = tmp;
     }
+}
+void deleteNodeLast()
+{
+    struct node *p = head, *q = head;
+
+    while (p->next != NULL)
+    {
+        q=p; 
+        p = p->next;
+    }
+    q->next = NULL;
+    free(p); 
+}
+
+void delBeg(){
+    struct node *p = head;
+    head = head->next; 
+    free(p); 
 }
 
 int main()
@@ -171,7 +195,9 @@ int main()
 
             addNodeAny(src, num);
             break;
-
+        case 4:
+            deleteNodeLast();
+            break;
         case 7:
             display();
             break;
