@@ -12,7 +12,7 @@ struct node
 // implementation -> c lang -> c++ java python
 //  self ref structure
 
-void addNode(int num)
+void addNode(int num) // Last
 {
     struct node *tmp, *p;
     if (head == NULL)
@@ -88,21 +88,106 @@ void addNodeBeg(int num)
         head = tmp;
     }
 }
+
+void sumOfAllNode()
+{
+    int sum = 0;
+    struct node *p = head;
+
+    while (p != NULL)
+    {
+        sum = sum + p->data;
+        p = p->next;
+    }
+    printf("\nSum of all node = %d", sum);
+}
+// sumOfAllEven
+// sumOfAllOdd
+// countTotlaNode
+// countEvenNode
+// countOddNode
+
+void addNodeAny(int src,int num){
+    struct node *p = head; 
+    struct node *tmp;
+    while(p!=NULL){
+        if(p->data == src){
+            break;
+        }
+        p = p->next;
+    }
+
+    if(p == NULL){
+        printf("\nInvalid Source");
+    }else{
+        tmp = malloc(sizeof(struct node));
+        tmp->data = num;
+        tmp->next =  p->next; 
+        p->next = tmp; 
+    }
+}
+
 int main()
 {
 
-    addNode(10);
-    addNode(20);
-    addNode(30);
-    addNode(40);
-    addNode(50);
+    int choice;
+    int num, src;
 
-    addNodeBeg(15);
+    while (1)
+    {
+        printf("\n0 For EXIT");
+        printf("\n1 For Add Node Last");
+        printf("\n2 For Add Node Beg");
+        printf("\n3 For Add Node Any");
 
-    addNodeBeg(25);
+        printf("\n4 For Delete Node Last");
+        printf("\n5 For Delete Node Beg");
+        printf("\n6 For Delete Node Any");
 
-    display();
+        printf("\n7 For List All Nodes : display ");
+        printf("\n8 For search");
+        printf("\n9 For Sum Of All Nodes");
+        printf("\nEnter choice : ");
 
-    search(50);
+        scanf("%d", &choice);
+
+        switch (choice)
+        {
+        case 0:
+            exit(0);
+        case 1:
+            printf("\nEnter numnber");
+            scanf("%d", &num);
+            addNode(num);
+            break;
+        case 2:
+            printf("\nEnter numnber");
+            scanf("%d", &num);
+            addNodeBeg(num);
+            break;
+        case 3:
+            printf("\nEnter source and numnber");
+            scanf("%d%d", &src, &num);
+
+            addNodeAny(src, num);
+            break;
+
+        case 7:
+            display();
+            break;
+        case 8:
+            printf("\nEnter numnber");
+            scanf("%d", &num);
+            search(num);
+            break;
+        case 9:
+            sumOfAllNode();
+            break;
+
+        default:
+            break;
+        }
+    }
+
     return 0;
 }
