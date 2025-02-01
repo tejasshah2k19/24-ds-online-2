@@ -403,7 +403,17 @@ single linked list ->
 dynamic list -> 
         when you want you will allocate memory -> 
 
-        
+
+double linked list ---> 
+
+        node :  1) data 
+                2) next 
+                3) previous 
+
+------------------------------------------------
+
+
+
 
 
 
