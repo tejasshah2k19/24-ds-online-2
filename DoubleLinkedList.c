@@ -40,13 +40,21 @@ void display()
         p = p->next;
     }
 }
+
+void addBeg(int num){
+
+}
+void addAny(int src,int num){
+
+}
+
 int main()
 {
     int ch;
     int num;
     while (1)
     {
-        printf("\n0 For Exit\n1 For Add Node\n2 For Display\nEnter choice");
+        printf("\n0 For Exit\n1 For Add Node\n2 For Display\n3 for add beg\n4 for add any\n5 for del beg\n6 for del last\n7 for del any\nEnter choice");
         scanf("%d", &ch);
 
         switch (ch)
