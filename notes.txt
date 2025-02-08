@@ -416,6 +416,135 @@ double linked list --->
 
 
 
+1 For Signup
+2 For Login
+3 For Exit
+Enter your choice: 1
+
+Enter First Name: ram
+Enter Email: ram@gmail.com
+Enter Password: ram
+
+Signup Successful!
+
+1 For Signup
+2 For Login
+3 For Exit
+Enter your choice: 1
+
+Enter First Name: laxman
+Enter Email: laxman@gmail.com
+Enter Password: laxman
+
+Signup Successful!
+
+1 For Signup
+2 For Login
+3 For Exit
+Enter your choice: 2
+
+Enter Email: ram
+Enter Password: ram
+
+Invalid Email or Password!
+
+1 For Signup
+2 For Login
+3 For Exit
+Enter your choice: 2
+
+Enter Email: ram
+Enter Password: ram
+
+Invalid Email or Password!
+
+1 For Signup
+2 For Login
+3 For Exit
+Enter your choice: 2
+
+Enter Email: ram@gmail.com
+Enter Password: ram
+
+Login Successful! Welcome, ram
+
+0. Add Account
+1. Add Expense
+2. List Expenses
+3. Check Balance
+4. Logout
+Enter your choice: 0
+
+Enter Account Name: Cash
+Enter Initial Balance: 25000
+
+Account Created Successfully with 25000 amount !
+
+0. Add Account
+1. Add Expense
+2. List Expenses
+3. Check Balance
+4. Logout
+Enter your choice: 1
+
+Enter Expense Title: Recharge
+Enter Expense Amount: 2000
+
+Expense Added Successfully!
+
+0. Add Account
+1. Add Expense
+2. List Expenses
+3. Check Balance
+4. Logout
+Enter your choice: 1
+
+Enter Expense Title: party
+Enter Expense Amount: 2000
+
+Expense Added Successfully!
+
+0. Add Account
+1. Add Expense
+2. List Expenses
+3. Check Balance
+4. Logout
+Enter your choice: 3
+
+Current Balance: Γé╣ 21000
+
+0. Add Account
+1. Add Expense
+2. List Expenses
+3. Check Balance
+4. Logout
+Enter your choice: 2
+
+===================================
+        Expense List
+===================================
+| No  | Title                | Amount     |
+-----------------------------------
+| 1   | party                | Γé╣2000 |
+| 2   | Recharge             | Γé╣2000 |
+===================================
+
+0. Add Account
+1. Add Expense
+2. List Expenses
+3. Check Balance
+4. Logout
+Enter your choice: 4
+
+Logging Out...
+
+1 For Signup
+2 For Login
+3 For Exit
+Enter your choice: 3
+
+Exiting Program...
+
 
 
 
