@@ -413,7 +413,17 @@ double linked list --->
 ------------------------------------------------
 
 
+struct User{
+    name email password 
+    accountName balance 
+    Expense exp*; 
+    User *next;
+}
 
+struct Expense{
+    title 
+    amount
+}
 
 
 1 For Signup
