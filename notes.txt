@@ -564,3 +564,11 @@ NoN Linear DataStructure ->
 Tree ->
 
 
+tree travel -> 
+
+    In Order        left-root-right 
+    Pre Order       root-left-right
+    Post Order      left-right-root 
+
+
+    Pre Order ->  root-left-right 
